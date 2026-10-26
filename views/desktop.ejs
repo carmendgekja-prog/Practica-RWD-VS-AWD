@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Catálogo de Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1>TechServer - Catálogo de Componentes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        <button id="btn-filtros" class="btn-toggle-filtros">⚙️ Mostrar Filtros</button> 
+        <aside id="sidebar" class="colapsado">
+            <h2>Filtros Avanzados</h2>
+            <form>
+                <label>Filtrar por: </label>
+            </form>
+            <form>
+ <input type="checkbox" id="opcion1" value="opcion1">
+ <label for="opcion1">En existencia</label><br>
+<input type="checkbox" id="opcion1" value="opcion1">
+ <label for="opcion1">Envio gratis</label><br>
+ <input type="checkbox" id="opcion2" value="opcion2">
+ <label for="opcion2">En oferta</label><br>
+ <input type="checkbox" id="opcion3" value="opcion3">
+ <label for="opcion3">Producto nuevo</label><br>
+ <input type="submit" value="Enviar">
+</form>
+                
+            </form>
+            
+            <h2>Gráfico de Comparativa</h2>
+<div id="grafico-comparativa">
+    <picture>
+        <source srcset="IMG-JPG/Grafico.webp" type="image/webp"> 
+        <!-- La etiqueta img es obligatoria para que la imagen exista -->
+        <img src="IMG-JPG/Grafico.webp" alt="Gráfico comparativo de marcas" style="max-width: 100%; height: auto;">
+    </picture>
+</div>
+        </aside>
+
+       
+        <section id="catalogo">
+            <h2>Productos Destacados</h2>
+            <div class="grid-productos">
+                
+                <!--  -->
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/AMD Ryzen 7.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/AMD Ryzen 7.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="AMD Ryzen 7.jpg" alt="Procesador Ryzen 7 5700x">
+    </picture>
+    <h3>Procesador Ryzen 7 5700x</h3>
+    <ul class="especificaciones">
+        <li>AMD Ryzen 7</li>
+        <li>Socket: AM4</li>
+        <li>Núcleos: 8</li>
+        <li>Frecuencia: 3.4 GHz</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <!-- Tarjeta de Producto 2 -->
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-MSI-B550M-APRO-2.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-MSI-B550M-APRO-2.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-MSI-B550M-APRO-2.jpg" alt="Tarjeta Madre MSI B550M APRO-2">
+    </picture>
+    <h3>Tarjeta Madre MSI B550M APRO-2</h3>
+    <ul class="especificaciones">
+        <li>Socket: AM4</li>
+        <li>Chipset: B550</li>
+        <li>64GB DDR4</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-XPG-AX4U320016G.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-XPG-AX4U320016G.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-XPG-AX4U320016G.jpg" alt="Memoria RAM XPG DDR4">
+    </picture>
+    <h3>Memoria RAM XPG</h3>
+    <ul class="especificaciones">
+        <li>Memoria RAM DDR4</li>
+        <li>Capacidad: 16GB</li>
+        <li>Velocidad: 3200MHz</li>
+        <li>1x16GB</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-MSI-OLEDX24.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-MSI-OLEDX24.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-MSI-OLEDX24.jpg" alt="Monitor MSI OLEDX24">
+    </picture>
+    <h3>Monitor MSI OLEDX24</h3>
+    <ul class="especificaciones">
+        <li>Tipo: OLED</li>
+        <li>Resolución: 2560x1440</li>
+        <li>Panel: 24"</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-KINGSTON-SNV3S1000G.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-KINGSTON-SNV3S1000G.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-KINGSTON-SNV3S1000G.jpg" alt="Memoria Kingston SNV3S1000G">
+    </picture>
+                    <h3>Memoria Kingston SNV3S1000G</h3>
+                    <ul class="especificaciones">
+                        <li>Tipo: DDR5</li>
+                        <li>Velocidad: 4800 MHz</li>
+                    </ul>
+                    <button>Comprar ahora</button>
+                </article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-MSI-MAGCORELIQUIDA13360-c34f8a.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-MSI-MAGCORELIQUIDA13360-c34f8a.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-MSI-MAGCORELIQUIDA13360-c34f8a.jpg" alt="Cooler MSI MAG CORE LIQUIDA 13360">
+    </picture>
+    <h3>Cooler MSI MAG CORE LIQUIDA 13360</h3>
+    <ul class="especificaciones">
+        <li>Tipo: Líquido</li>
+        <li>Velocidad: 1200 RPM</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-MSI-GeForceRTX3050LP6GOC-410497.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-MSI-GeForceRTX3050LP6GOC-410497.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-MSI-GeForceRTX3050LP6GOC-410497.jpg" alt="Tarjeta gráfica MSI GeForce RTX 3050">
+    </picture>
+    <h3>Tarjeta gráfica MSI GeForce RTX 3050</h3>
+    <ul class="especificaciones">
+        <li>Series 30</li>
+        <li>Tipo: Discreta</li>
+        <li>Memoria: 6GB GDDR6</li>
+        <li>PCI Express x8 4.0</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-INTEL-BX8071512900KF-2beebf.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-INTEL-BX8071512900KF-2beebf.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-INTEL-BX8071512900KF-2beebf.jpg" alt="Procesador Intel Core i9-12900KF">
+    </picture>
+    <h3>Procesador Intel Core i9-12900KF</h3>
+    <ul class="especificaciones">
+                        <li>Tipo: CPU</li>
+                        <li>Velocidad: 3.2 GHz</li>
+                        <li>Núcleos: 16</li>
+                        <li>Hilos: 24</li>
+                    </ul>
+                    <button>Comprar ahora</button>
+                </article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-LOGITECH-910-005281-1.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-LOGITECH-910-005281-1.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-LOGITECH-910-005281-1.jpg" alt="Teclado Logitech G213">
+    </picture>
+    <h3>Teclado Logitech G213</h3>
+    <ul class="especificaciones">
+                        <li>Tipo: Mecánico</li>
+                        <li>Color: Negro</li>
+                        <li>Conectividad: USB</li>
+                        <li>Idioma: Inglés</li>
+                    </ul>
+                    <button>Comprar ahora</button>
+                </article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-BALAMRUSH-BR-941471-4d796d.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-BALAMRUSH-BR-941471-4d796d.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-BALAMRUSH-BR-941471-4d796d.jpg" alt="Gabinete Balam Rush BR-941471">
+    </picture>
+    <h3>Gabinete Balam Rush BR-941471</h3>
+    <ul class="especificaciones">
+                        <li>Mid Tower</li>
+                        <li>Tipo: ATX</li>
+                        <li>Material: Acrílico</li>
+                        <li>5 ventiladores</li>
+                    </ul>
+                    <button>Comprar ahora</button>
+                </article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/CP-LOGITECH-920-010442-049155.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/CP-LOGITECH-920-010442-049155.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="CP-LOGITECH-920-010442-049155.jpg" alt="Raton Logitech G203">
+    </picture>
+    <h3>Raton Logitech G203</h3>
+    <ul class="especificaciones">
+                        <li>Tipo: Óptico</li>
+                        <li>Conectividad: USB</li>
+                        <li>Color: Negro</li>
+                        <li>Resolución: 12,000 DPI</li>
+                    </ul>
+                    <button>Comprar ahora</button>
+                </article>
+
+                <article class="tarjeta">
+    <picture>
+        <!-- Para móviles (menos de 640px): carga versión pequeña y formato AVIF/WebP -->
+        <source srcset="IMG-webp/71XfvheoH6L._AC_SL1500_.webp" type="image/webp" media="(max-width: 640px)">
+        <!-- Para escritorio: carga versión de alta resolución -->
+        <source srcset="IMG-JPG/71XfvheoH6L._AC_SL1500_.webp" type="image/webp">
+        <!-- Fallback (respaldo) si el navegador es antiguo -->
+        <img src="71XfvheoH6L._AC_SL1500_.jpg" alt="Laptop Gamer ASUS ROG">
+    </picture>
+    <h3>Laptop Gamer ASUS ROG</h3>
+    <ul class="especificaciones">
+        <li>Tipo: Notebook</li>
+        <li>Procesador: Intel Core i9-12900KF</li>
+        <li>Memoria: 32GB DDR5</li>
+        <li>Almacenamiento: 1TB NVMe SSD</li>
+    </ul>
+    <button>Comprar ahora</button>
+</article>
+                
+            </div>
+        </section>
+
+    </main>
+    <script>
+        const btnFiltros = document.getElementById('btn-filtros');
+        const sidebar = document.getElementById('sidebar');
+
+        btnFiltros.addEventListener('click', () => {
+            sidebar.classList.toggle('colapsado');
+            if(sidebar.classList.contains('colapsado')) {
+                btnFiltros.textContent = 'Mostrar Filtros';
+            } else {
+                btnFiltros.textContent = 'Ocultar Filtros';
+            }
+        });
+    </script>
+
+</body>
+</html>
